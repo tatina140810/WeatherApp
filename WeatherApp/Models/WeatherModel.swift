@@ -1,10 +1,3 @@
-//
-//  WeatherModel.swift
-//  WeatherApp
-//
-//  Created by Tatina Dzhakypbekova on 17/5/2025.
-//
-
 import Foundation
 
 struct WeatherResponse: Decodable {

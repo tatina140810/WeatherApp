@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  WeatherApp
-//
-//  Created by Tatina Dzhakypbekova on 17/5/2025.
-//
-
 import UIKit
 
 final class WeatherViewController: UIViewController, UITableViewDataSource {
@@ -28,7 +21,7 @@ final class WeatherViewController: UIViewController, UITableViewDataSource {
         label.text = "5 - Day Forecast "
         return label
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -47,7 +40,7 @@ final class WeatherViewController: UIViewController, UITableViewDataSource {
             locationLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             forecastLabel.topAnchor.constraint(equalTo: locationLabel.bottomAnchor, constant: 24),
             forecastLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        
+            
             tableView.topAnchor.constraint(equalTo: forecastLabel.bottomAnchor, constant: 50),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -81,10 +74,10 @@ final class WeatherViewController: UIViewController, UITableViewDataSource {
         }
         let day = viewModel.forecast[indexPath.row]
         cell.configure(with: day)
-
+        
         return cell
     }
-
-
+    
+    
 }
 
